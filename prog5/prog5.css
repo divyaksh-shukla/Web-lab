@@ -1,0 +1,63 @@
+* {
+    display: block;
+}
+ROOT {
+    margin-top: 8px;
+    text-align: center;
+}
+STUDENT-DATA {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* IRON MAN THEME */
+.iron-man STUDENT-HEAD{
+    display: table-header-group;
+    color: rgb(238, 213, 104);
+    background-color: rgb(206, 32, 32);
+    font-weight: bolder;
+    font-size: 20px;
+}
+.iron-man STUDENT:nth-child(even) {
+    display: table-row;
+    background-color: rgb(255, 241, 181);
+}
+.iron-man STUDENT:nth-child(odd) {
+    display: table-row;
+    background-color: rgb(255, 176, 176);
+}
+
+/* WAR MACHINE THEME */
+.war-machine STUDENT-HEAD{
+    display: table-header-group;
+    color: rgb(238, 213, 104);
+    background-color: rgb(85, 85, 85);
+    font-weight: bolder;
+    font-size: 20px;
+}
+.war-machine STUDENT:nth-child(odd) {
+    display: table-row;
+    background-color: rgb(195, 195, 195);
+}
+.war-machine STUDENT:nth-child(even) {
+    display: table-row;
+    background-color: rgb(255, 241, 181);
+}
+USN, NAME, COLLEGE, BRANCH, JOINING, EMAIL {
+    display:table-cell;
+    padding: 5px 20px;
+    border:2px solid black;
+}
+STUDENT > EMAIL {
+    color: blue;
+    text-decoration: underline;
+}
+
+body{
+    margin: 0px;
+}

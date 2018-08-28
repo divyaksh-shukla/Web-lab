@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Calculator</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Adding the JS script to the html -->
+    <script src="calculator.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1><center>Simple JS Calculator</center></h1>
+    <center>
+    <table>
+      <thead>
+        <th>Operand 1</th>
+        <th>Operator</th>
+        <th>Operand 2</th>
+      </thead>
+      <tbody>
+        <td><input type="number" id="operand1" /></td>
+        <td><input type="text" id="operator" /></td>
+        <td><input type="number" id="operand2" /></td>
+      </tbody>
+    </table>
+    <button type="button" name="button" onclick="calculateValue();">Calculate</button>
+    <div id="result"></div>
+    </center>
+  </body>
+</html>
