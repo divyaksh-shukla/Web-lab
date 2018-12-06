@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+</head>
+<body>
+	<form action="prog8a.php" method="POST">
+	<span>Operand 1</span>
+	<input type="number" required name="operand1"/>
+	<span>Operand 2</span>
+	<input type="number" name="operand2"/>
+	<br/>
+	<input type="submit" name="operator" value="+" />
+	<input type="submit" name="operator" value="-" />
+	<input type="submit" name="operator" value="*" />
+	<input type="submit" name="operator" value="/" />
+	</form>
+</body>
+</html>
