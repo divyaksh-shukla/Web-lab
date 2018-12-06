@@ -2,7 +2,7 @@ let fontSize = 5;
 let textState = "growing";
 var text = document.getElementById('changing-text');
 
-setInterval(changeText, 100);
+var textChanger = setInterval(changeText, 100);
 
 function changeText() {
   console.log(textState == "growing");
@@ -23,6 +23,7 @@ function changeText() {
   if(textState == "shrinking") {
     if(fontSize < 5){
       textState = "growing";
+      clearInterval(textChanger);
     }
     else {
       text.style.fontSize = fontSize + "pt";

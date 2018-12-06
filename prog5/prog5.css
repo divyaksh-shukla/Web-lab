@@ -15,6 +15,48 @@ STUDENT-DATA {
     text-align: left;
 }
 
+STUDENT-HEAD{
+    display: table-header-group;
+    color: rgb(238, 213, 104);
+    background-color: rgb(85, 85, 85);
+    font-weight: bolder;
+    font-size: 20px;
+}
+STUDENT:nth-child(odd) {
+    display: table-row;
+    background-color: rgb(195, 195, 195);
+}
+STUDENT:nth-child(even) {
+    display: table-row;
+    background-color: rgb(255, 241, 181);
+}
+
+USN, NAME, COLLEGE, BRANCH, JOINING, EMAIL {
+    display:table-cell;
+    padding: 5px 20px;
+    border:2px solid black;
+}
+STUDENT > EMAIL {
+    color: blue;
+    text-decoration: underline;
+}
+
+body{
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* IRON MAN THEME */
 .iron-man STUDENT-HEAD{
     display: table-header-group;
@@ -47,17 +89,4 @@ STUDENT-DATA {
 .war-machine STUDENT:nth-child(even) {
     display: table-row;
     background-color: rgb(255, 241, 181);
-}
-USN, NAME, COLLEGE, BRANCH, JOINING, EMAIL {
-    display:table-cell;
-    padding: 5px 20px;
-    border:2px solid black;
-}
-STUDENT > EMAIL {
-    color: blue;
-    text-decoration: underline;
-}
-
-body{
-    margin: 0px;
 }

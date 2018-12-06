@@ -21,6 +21,8 @@ function calculateValue() {
         answer = operand1 / operand2;
       }
       break;
+    default:
+      answer = "Invalid operator (choose among +,-,*,/)"
   }
 
   var result = document.getElementById('result');
